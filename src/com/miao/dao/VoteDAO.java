@@ -7,52 +7,60 @@ import com.miao.util.Page;
 
 public interface VoteDAO {
 	/**
-	 * ����ͶƱ
+	 * 增加投票
 	 * @param vote	
 	 */
 	public void addVote(Vote vote);
+	
 	/**
-	 * ����ͶƱ
+	 * 更新投票
 	 * @param vote
 	 */
 	public void updateVote(Vote vote);
+	
 	/**
-	 * ɾ��ͶƱ
+	 * 删除投票
 	 * @param voteId
 	 */
 	public void deleteVote(int voteId);
+	
 	/**
-	 * ��ҳ��ѯ����ͶƱ
+	 * 分页查找所有投票
 	 * @param page
 	 * @return
 	 */
 	public List<Vote> findAllVote(Page page);
+	
 	/**
-	 * ��ҳ��ѯÿƵ����ͶƱ
+	 * 按照投票频道分页查找所有投票
 	 * @param page
 	 * @param channelId
 	 * @return
 	 */
 	public List<Vote> findVoteByChannel(Page page, int channelId);
+	
 	/**
-	 * ͨ��Id��ѯͶƱ
+	 * ͨ按照投票Id查找投票
 	 * @param voteId
 	 * @return
 	 */
 	public Vote findVoteById(int voteId);
+	
 	/**
-	 * ͨ��ͶƱ���Ʋ�ѯͶƱ
+	 * ͨ按照投票名称查找投票
 	 * @param voteName
 	 * @return
 	 */
 	public Vote findVoteByName(String voteName);
+	
 	/**
-	 * ��ѯ���еļ�¼��
+	 * 查找所有投票总数
 	 * @return
 	 */
 	public int findAllCount();
+	
 	/**
-	 * ��ѯÿƵ���µļ�¼��
+	 * 按照频道查找所有投票总数
 	 * @param channelId
 	 * @return
 	 */

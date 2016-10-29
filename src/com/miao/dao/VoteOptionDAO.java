@@ -6,28 +6,32 @@ import com.miao.bean.VoteOption;
 
 public interface VoteOptionDAO {
 	/**
-	 * 添加投票选项
+	 * 澧炲姞鎶曠エ閫夐」
 	 * @param voteOption
 	 */
 	public void addVoteOption(VoteOption voteOption);
+	
 	/**
-	 * 更新投票选项
+	 * 鏇存柊鎶曠エ閫夐」
 	 * @param voteOption
 	 */
 	public void updateVoteOption(VoteOption voteOption);
+	
 	/**
-	 * 删除投票选项
+	 * 鍒犻櫎鎶曠エ閫夐」
 	 * @param voteOptionId
 	 */
 	public void deleteVoteOption(int voteOptionId);
+	
 	/**
-	 * 查询所有投票选项
+	 * 鎸夌収鎶曠エId鏌ユ壘鎵�鏈夌殑鎶曠エ閫夐」
 	 * @param voteId
 	 * @return
 	 */
 	public List<VoteOption> findVoteOptionByVoteId(int voteId);
+	
 	/**
-	 * 通过ID查询投票选项
+	 * 通鎸夌収棰戦亾Id鏌ユ壘鎶曠エ閫夐」
 	 * @param voteOptionId
 	 * @return
 	 */

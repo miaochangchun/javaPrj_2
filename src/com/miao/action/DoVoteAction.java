@@ -51,7 +51,7 @@ public class DoVoteAction extends ActionSupport{
 		for(Cookie cookie : cookies){
 			if (cookie.getValue().equals(Integer.toString(voteId))) {
 				this.addActionError("您今天已经投过票了，请明天再来！");
-				return this.INPUT;
+				return INPUT;
 			}
 		}
 		
@@ -69,6 +69,6 @@ public class DoVoteAction extends ActionSupport{
 			Cookie cookie = new Cookie("hasVote" + voteId, Integer.toString(voteId));
 			ServletActionContext.getResponse().addCookie(cookie);
 		}
-		return this.SUCCESS;
+		return SUCCESS;
 	}
 }

@@ -13,8 +13,8 @@ public class DBConnection {
 	private static final String DBPASSWORD = "111111";
 	
 	/**
-	 * »ñÈ¡Êı¾İ¿âµÄÁ¬½Ó
-	 * @return	Êı¾İ¿âÁ¬½Ó
+	 * æ•°æ®åº“è¿æ¥æ–¹æ³•
+	 * @return	æ•°æ®åº“è¿æ¥å¯¹è±¡
 	 */
 	public static Connection getConnection(){
 		Connection conn = null;
@@ -32,8 +32,8 @@ public class DBConnection {
 	}
 	
 	/**
-	 * ¹Ø±ÕÊı¾İ¿âÁ¬½Ó
-	 * @param conn	Êı¾İ¿âÁ¬½ÓµÄ¶ÔÏó
+	 * å…³é—­æ•°æ®åº“è¿æ¥
+	 * @param conn	æ•°æ®åº“è¿æ¥å¯¹è±¡
 	 */
 	public static void close(Connection conn) {
 		if (conn != null) {
@@ -47,8 +47,8 @@ public class DBConnection {
 	}
 	
 	/**
-	 * ¹Ø±ÕÔ¤´¦Àí¶ÔÏó
-	 * @param pstmt	Ô¤´¦Àí¶ÔÏó
+	 * å…³é—­é¢„æŸ¥è¯¢
+	 * @param pstmt	é¢„æŸ¥è¯¢å¯¹è±¡
 	 */
 	public static void close(PreparedStatement pstmt){
 		if (pstmt != null) {
@@ -62,8 +62,8 @@ public class DBConnection {
 	}
 	
 	/**
-	 * ¹Ø±Õ½á¹û¼¯¶ÔÏó
-	 * @param rs	½á¹û¼¯¶ÔÏó
+	 * å…³é—­æŸ¥è¯¢ç»“æœ
+	 * @param rs	æŸ¥è¯¢ç»“æœå¯¹è±¡
 	 */
 	public static void close(ResultSet rs){
 		if (rs != null) {

@@ -34,6 +34,6 @@ public class DeleteVoteAction extends ActionSupport{
 		}
 		//删除投票信息
 		voteDAO.deleteVote(voteId);
-		return this.SUCCESS;
+		return SUCCESS;
 	}
 }

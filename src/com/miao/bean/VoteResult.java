@@ -3,17 +3,21 @@ package com.miao.bean;
 import java.util.List;
 
 public class VoteResult {
-	private Vote vote;						//Í¶Æ±ÐÅÏ¢
-	private List<VoteOption> voteOptions;	//ËùÓÐÑ¡ÏîºÏ¼¯
+	private Vote vote;						//æŠ•ç¥¨ç±»
+	private List<VoteOption> voteOptions;	//æŠ•ç¥¨é€‰é¡¹æ•°ç»„
+	
 	public Vote getVote() {
 		return vote;
 	}
+	
 	public void setVote(Vote vote) {
 		this.vote = vote;
 	}
+	
 	public List<VoteOption> getVoteOptions() {
 		return voteOptions;
 	}
+	
 	public void setVoteOptions(List<VoteOption> voteOptions) {
 		this.voteOptions = voteOptions;
 	}

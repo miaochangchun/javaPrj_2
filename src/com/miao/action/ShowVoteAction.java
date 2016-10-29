@@ -62,6 +62,6 @@ public class ShowVoteAction extends ActionSupport{
 		HttpServletRequest request = ServletActionContext.getRequest();
 		request.setAttribute("voteResultList", voteResultList);
 		request.setAttribute("page", page);
-		return this.SUCCESS;
+		return SUCCESS;
 	}
 }

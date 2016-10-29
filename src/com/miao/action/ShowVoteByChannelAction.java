@@ -60,6 +60,6 @@ public class ShowVoteByChannelAction extends ActionSupport{
 		HttpServletRequest request = ServletActionContext.getRequest();
 		request.setAttribute("voteResultList", voteResults);
 		request.setAttribute("page", page);
-		return this.SUCCESS;
+		return SUCCESS;
 	}
 }

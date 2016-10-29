@@ -66,6 +66,6 @@ public class AddVoteAction extends ActionSupport{
 			//添加到数据库
 			voteOptionDAO.addVoteOption(voteOption);
 		}
-		return this.SUCCESS;
+		return SUCCESS;
 	}
 }
